@@ -23,5 +23,12 @@ class YourTypicalCalculatorTests: XCTestCase {
         //comparing result above, and the value it supposed to be which is '20'
         XCTAssertEqual(result, 20)
     }
+    
+    func testMultiplyNumbers() {
+        let formulaes = Formulas()
+        let result = formulaes.multiplyNumbers(x: 10, y: 10)
+        
+        XCTAssertEqual(result, 100)
+    }
 
 }
