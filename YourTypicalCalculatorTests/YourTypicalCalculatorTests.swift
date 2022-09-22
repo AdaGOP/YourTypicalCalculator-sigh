@@ -10,11 +10,18 @@ import XCTest
 
 class YourTypicalCalculatorTests: XCTestCase {
 
+    override class func setUp() {
+    }
+    
+    override class func tearDown() {
+        
+    }
+    
     func testAddNumbers() {
         let formulaes = Formulas()
         let result = formulaes.addNumbers(x: 10, y: 10)
         //comparing result above, and the value it supposed to be which is '20'
-        XCTAssertEqual(result, 20)
+        XCTAssertEqual(result, 30)
     }
 
 }
