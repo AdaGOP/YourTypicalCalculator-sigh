@@ -21,4 +21,8 @@ class Formulas {
         return x / y
     }
     
+    func reducedByNumbers(x: Int, y: Int) -> Int {
+        return x - y
+    }
+    
 }
